@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de biblioteca</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-md">
+    <h1>Sistema de biblioteca</h1>
+
+    <div class="row">
+        <!-- AQUI VA EL FORMULARIO IZQUIERDO-->
+        <div class="col-4">
+    
+            <div class="accordion m-t" id="accordionExample">
+    
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Autores
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+    
+                            <!-- BOTONES-->
+                            <div class="row justify-content-center">
+                                <div class="col-6 text-center">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarAutor">Nuevo</button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEliminarAutor">Borrar</button>
+                                </div>
+                            </div>
+    
+                            <!-- LISTA DE AUTORES -->
+                            <div class="list-group list-group-flush no-gutters overflow-auto m-t" style="height: 200px;">
+                                <li class="list-group-item">Allan Poe</li>
+                                <li class="list-group-item">Mark Twain</li>
+                                <li class="list-group-item">Lewis Carro</li>
+                                <li class="list-group-item">Isabel Alle</li>
+                                <li class="list-group-item">Allan Poe</li>
+                                <li class="list-group-item">Mark Twain</li>
+                                <li class="list-group-item">Lewis Carro</li>
+                                <li class="list-group-item">Isabel Alle</li>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Libros
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <!-- Contenido del acordeón de Libros -->
+
+                            <!-- BOTONES-->
+                            <div class="row justify-content-center">
+                                <div class="col-6 text-center">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarAutor">Nuevo</button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEliminarAutor">Borrar</button>
+                                </div>
+                            </div>
+
+
+                            <!-- LISTA  -->
+                            <div class="list-group list-group-flush no-gutters overflow-auto m-t" style="height: 200px;">
+                                <li class="list-group-item">La casa de Loli</li>
+                                <li class="list-group-item">El Conde de Dracula</li>
+                                <li class="list-group-item">Las Aventura de Tom Sawyer</li>
+                                <li class="list-group-item">Alicia en el país de las Maravillas</li>
+                                <li class="list-group-item">La casa de Loli</li>
+                                <li class="list-group-item">El Conde de Dracula</li>
+                                <li class="list-group-item">Las Aventura de Tom Sawyer</li>
+                                <li class="list-group-item">Alicia en el país de las Maravillas</li>
+                            </div>
+
+
+                        
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Editoriales
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <!-- Contenido del acordeón de Editoriales -->
+
+                            <!-- BOTONES-->
+                            <div class="row justify-content-center">
+                                <div class="col-6 text-center">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarAutor">Nuevo</button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEliminarAutor">Borrar</button>
+                                </div>
+                            </div>
+
+
+                            <!-- LISTA-->
+                            <div class="list-group list-group-flush no-gutters overflow-auto m-t" style="height: 200px;">
+                                <li class="list-group-item">Castellana</li>
+                                <li class="list-group-item">LibroMax</li>
+                                <li class="list-group-item">Arboleada</li>
+                                <li class="list-group-item">El País</li>
+                                <li class="list-group-item">Castellana</li>
+                                <li class="list-group-item">LibroMax</li>
+                                <li class="list-group-item">Arboleada</li>
+                                <li class="list-group-item">El País</li>
+                                
+                            </div>
+
+
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    
+    
+
+
+
+           <!--AQUI VA TODA LA PARTE DERECHA-->
+           <div class="col-8">
+
+            
+           <!-- Pestañas -->
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="autor-tab" data-bs-toggle="tab" href="#autor" role="tab" aria-controls="autor" aria-selected="true">Autor</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="libro-tab" data-bs-toggle="tab" href="#libro" role="tab" aria-controls="libro" aria-selected="false">Libro</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="editorial-tab" data-bs-toggle="tab" href="#editorial" role="tab" aria-controls="editorial" aria-selected="false">Editorial</a>
+    </li>
+</ul>
+
+<!-- Contenido de las pestañas -->
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="autor" role="tabpanel" aria-labelledby="autor-tab">
+        <!-- Contenido de la pestaña "Autor" -->
+
+        
+            <h4>Detalles del autor</h4>
+            <div class="row">
+                <div class="col-6">
+                    <p>Nombre: Mark Twain</p>
+                    <p>País: <select class="form-select" aria-label="País">
+                            <option value="1">USA</option>
+                            <option value="2">CR</option>
+                            <option value="3">COL</option>
+                            <option value="4">CANADA</option>
+                            <option value="5" selected>TURK</option>
+                            <option value="6">NIC</option>
+                        </select>
+                    </p>
+                    <p>Nacimiento: 1835 </p>
+                </div>
+
+                <div class="col-6">
+                    
+                    <p>Fallecimiento: 1910 </p>
+                    <p>Genero:</p>
+                    <div class="list-group list-group-flush no-gutters overflow-auto m-t" style="height: 100px;">
+                        <li class="list-group-item" value="1">Ficción</li>
+                        <li class="list-group-item" value="2">Terror</li>
+                        <li class="list-group-item" value="3">Aventura</li>
+                        <li class="list-group-item" value="4">Romance</li>
+                        <li class="list-group-item" value="5" selected>Comedia</li>
+                    </div>
+                  
+
+
+            </div>
+          
+     
+   
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Libro</th>
+                    <th scope="col">Editorial</th>
+                    <th scope="col">Año</th>
+                    <th scope="col">Edición</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Principe y el sapo</td>
+                    <td>Alfaguarda</td>
+                    <td>1995</td>
+                    <td>5ra</td>
+                </tr>
+                <tr>
+                    <td>Tow Sawyer</td>
+                    <td>Penguin</td>
+                    <td>1995</td>
+                    <td>2da</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="col-12 d-flex justify-content-end">
+            <button type="button" class="btn btn-primary mt-2 mx-2">Cancel</button>
+            <button type="button" class="btn btn-primary mt-2">OK</button>
+        </div>
+    </div>
+</div>
+    
+
+
+
+    <div class="tab-pane fade" id="libro" role="tabpanel" aria-labelledby="libro-tab">
+        <!-- Contenido de la pestaña "Libro" -->
+        <h4>Detalles del Libro</h4>
+        <p>Nombre: Las aventuras de Tom Sawyer</p>
+        <p>ISBN: 12244-5678-45</p>
+        <div class="row">
+            <div class="col-6">
+                <p>Año: 2004</p>
+                <p>Autores:</p>
+            </div>
+            <div class="col-6">
+                <p>Edición:
+                    <select class="form-select" aria-label="Edición">
+                        <option value="1">1ra</option>
+                        <option value="2">2da</option>
+                        <option value="3">3ra</option>
+                        <option value="4">4ta</option>
+                        <option value="5" selected>5ta</option>
+                        <option value="6">6ta</option>
+                        <option value="7">7ma</option>
+                        <option value="8">8va</option>
+                        <option value="9">9na</option>
+                        <option value="10">10ma</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="list-group list-group-flush no-gutters overflow-auto m-t" style="height: 200px;">
+                    <li class="list-group-item">Mark Twain</li>
+                    <li class="list-group-item">LibroMax</li>
+                    <li class="list-group-item">Arboleada</li>
+                    <li class="list-group-item">El País</li>
+                    <li class="list-group-item">Castellana</li>
+                    <li class="list-group-item">LibroMax</li>
+                    <li class="list-group-item">Arboleada</li>
+                    <li class="list-group-item">El País</li>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarAutor">Agregar</button>
+                </div>
+                <div class="row mt-2">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEliminarAutor">Eliminar</button>
+                </div>
+                <div class="row">
+                    <div class="col-6">    
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary mt-5 mx-2">Cancel</button>
+                        <button type="button" class="btn btn-primary mt-5">OK</button>
+                    </div>
+                    <div class="col-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="editorial" role="tabpanel" aria-labelledby="editorial-tab">
+        <!-- Contenido de la pestaña "Editorial" -->
+        <h4>Detalles de la Editorial</h4>
+        <p>Nombre: Las aventuras de Tom Sawyer</p>
+        <p>ISBN: 12244-5678-45</p>
+        <div class="row">
+            <div class="col-6">
+                <p>Año: 2004</p>
+                <p>Autores:</p>
+            </div>
+            <div class="col-6">
+                <p>Edición:
+                    <select class="form-select" aria-label="Edición">
+                        <option value="1">1ra</option>
+                        <option value="2">2da</option>
+                        <option value="3">3ra</option>
+                        <option value="4">4ta</option>
+                        <option value="5" selected>5ta</option>
+                        <option value="6">6ta</option>
+                        <option value="7">7ma</option>
+                        <option value="8">8va</option>
+                        <option value="9">9na</option>
+                        <option value="10">10ma</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="list-group list-group-flush no-gutters overflow-auto m-t" style="height: 200px;">
+                    <li class="list-group-item">Mark Twain</li>
+                    <li class="list-group-item">LibroMax</li>
+                    <li class="list-group-item">Arboleada</li>
+                    <li class="list-group-item">El País</li>
+                    <li class="list-group-item">Castellana</li>
+                    <li class="list-group-item">LibroMax</li>
+                    <li class="list-group-item">Arboleada</li>
+                    <li class="list-group-item">El País</li>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarAutor">Agregar</button>
+                </div>
+                <div class="row mt-2">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEliminarAutor">Eliminar</button>
+                </div>
+                <div class="row">
+                    <div class="col-6">    
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary mt-5 mx-2">Cancel</button>
+                        <button type="button" class="btn btn-primary mt-5">OK</button>
+                    </div>
+                    <div class="col-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                    </div>
+
+                    
+                </div>
+
+                        
+                        
+                                    
+                                    
+                                
+        
+
+            
+             </div>
+           </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="path/to/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap Bundle with Popper esto funciona para poder abrir el contenido de las pestañas y acordeón según corresponda de cada nombre-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
